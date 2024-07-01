@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Portfolio1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <section class="Education">
+        <h1>Education</h1>
+        <div class="wol1">
+        <div class="wol"  onclick="toggleContent(this)">
+            <h1><span>School</span></h1>
+            <h2 class="hidden">Sree Bharathi School</h2>
+            <h2 class="hidden">2016-2017</h2>
+            <h2 class="hidden">SSC</h2>
+            <h2 class="hidden">9.2CGPA</h2>
+            <h2 class="hidden">Eluru,India</h2>
+        </div>
+        <div class="wol"  onclick="toggleContent(this)">
+            <h1><span>Intermediate</span></h1>
+            <h2 class="hidden">Sir C.R.Reddy Junior College for Women</h2>
+            <h2 class="hidden">2017-2019</h2>
+            <h2 class="hidden">MPC</h2>
+            <h2 class="hidden">8.29CGPA</h2>
+            <h2 class="hidden">Eluru,India</h2>
+         </div>
+        <div class="wol"  onclick="toggleContent(this)">
+            <h1><span>B.Tech</span></h1>
+            <h2 class="hidden">Sir C.R.Reddy College of Engineering</h2>
+            <h2 class="hidden">2019-2023</h2>
+            <h2 class="hidden">ECE</h2>
+            <h2 class="hidden">6.82CGPA</h2>
+            <h2 class="hidden">Eluru,India</h2>
+        </div>
+    
+    </section>
+</body>
+<script>
+    // script.js
+function toggleContent(element) {
+    const hiddenElements = element.querySelectorAll('.hidden');
+    let index = 0;
+
+    function showNext() {
+        if (index < hiddenElements.length) {
+            hiddenElements[index].style.display = 'block';
+            index++;
+            setTimeout(showNext, 500); // Adjust the delay as needed
+        }
+    }
+
+    showNext();
+}
+
+</script>
+</html>

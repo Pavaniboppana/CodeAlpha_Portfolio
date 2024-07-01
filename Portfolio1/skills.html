@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <link rel="stylesheet" href="./Portfolio1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="skills">
+        <h1>Skills</h1>
+        <div class="box1">
+            <div class="box">
+                <button class="reveal-btn" onclick="toggleContent(this)">Show</button>
+                <div class="content">
+                    <h1>Technical Skills</h1>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Bootstrap</p>
+                    <p>JavaScript</p>
+                    <p>React.js</p>
+                </div>
+            </div>
+            <div class="box">
+                <button class="reveal-btn" onclick="toggleContent(this)">Show</button>
+                <div class="content">
+                    <h1>Soft Skills</h1>
+                    <p>Communications</p>
+                    <p>Quick Learner</p>
+                    <p>Adaptability</p>
+                    <p>Hard Working</p>
+                    <p>Punctuality</p>
+                </div>
+            </div>
+            <div class="box">
+                <button class="reveal-btn" onclick="toggleContent(this)">Show</button>
+                <div class="content">
+                    <h1>Hobbies</h1>
+                    <p>Listening to Music</p>
+                    <p>Doing Sudoku</p>
+                    <p>Making Crafts</p>
+                    <p>Learning New things</p>
+                    <p>Gardening</p>
+                </div>
+            </div>
+            <div class="box">
+                <button class="reveal-btn" onclick="toggleContent(this)">Show</button>
+                <div class="content">
+                    <h1>Languages Known</h1>
+                    <p>English</p>
+                    <p>Telugu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // script.js
+function toggleContent(button) {
+    const box = button.parentElement;
+    box.classList.toggle('active');
+}
+
+    </script>
+</body>
+</html

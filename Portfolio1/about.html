@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Portfolio1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <section class="About">
+        <h1>About</h1>
+
+        <div class="par" onclick="toggleContent(this)">   
+            <span class="label">Address</span>
+            <h1>Veerisettigudem,Eluru,Andhra
+                Pradesh
+                </h1></div> 
+                <div class="par" onclick="toggleContent(this)"> 
+                    <span class="label">Contact</span>
+                         <h1>+91-9515936841</h1></div>
+                    <div class="par" onclick="toggleContent(this)">   
+                        <span class="label">Email Id</span>
+                         <h1>pavaniboppana123@gmail.com</h1></div>
+                        <div class="par" onclick="toggleContent(this)"> 
+                            <span class="label">Linkedin
+                                Id</span>
+                             <h1>https://www.linkedin.com/in/pavani30/
+                </h1></div>
+                <div class="par" onclick="toggleContent(this)"> 
+                    <span class="label">GitHub</span>
+                       <h1>https://github.com/Pavaniboppana
+                    </h1></div>
+        </section>
+</body>
+<script>
+    function toggleContent(element) {
+    element.classList.toggle('active');
+}
+</script>
+</html>
